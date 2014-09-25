@@ -12,15 +12,15 @@ apt-get install -y build-essential git curl
 apt-get install -y bash-completion zlib1g-dev libssl-dev libreadline-dev bash-completion libyaml-dev libcurl4-dev libsqlite3-dev apache2-dev
 
 # To allow adding to apt repo & install Python related packages
-# apt-get install -y python-software-properties python-pip python-dev
-#
-# # To install Oracle Java7
-# add-apt-repository -y ppa:webupd8team/java
-# apt-get update
-# # To accept the license
-# echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
-# echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
-# apt-get install -y oracle-java7-installer
+apt-get install -y python-software-properties python-pip python-dev
+
+# To install Oracle Java7
+add-apt-repository -y ppa:webupd8team/java
+apt-get update
+# To accept the license
+echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+apt-get install -y oracle-java7-installer
 
 # To install RVM, Ruby, and Rails
 \curl -L https://get.rvm.io | bash -s stable --autolibs=enable
