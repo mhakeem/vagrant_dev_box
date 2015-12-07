@@ -23,6 +23,7 @@ echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-se
 apt-get install -y oracle-java7-installer
 
 # To install RVM, Ruby, and Rails
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -L https://get.rvm.io | bash -s stable --autolibs=enable
 source /etc/profile.d/rvm.sh
 source ~/.rvm/scripts/rvm
