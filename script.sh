@@ -8,8 +8,8 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update
 
 # To install important packages like gcc, g++, git and others:
-apt-get install -y build-essential git curl
-apt-get install -y bash-completion zlib1g-dev libssl-dev libreadline-dev bash-completion libyaml-dev libcurl4-gnutls-dev libsqlite3-dev apache2-dev
+apt-get install -y build-essential git curl tree vim
+apt-get install -y bash-completion zlib1g-dev libssl-dev libreadline-dev bash-completion libyaml-dev libcurl4-gnutls-dev libsqlite3-dev apache2-threaded-dev
 
 # To allow adding to apt repo & install Python related packages
 apt-get install -y python-software-properties python-pip python-dev
@@ -36,6 +36,7 @@ _RUBY_VERSION="ruby-2.1.3"
 rvm install $_RUBY_VERSION
 rvm use $_RUBY_VERSION --default
 gem update
+rvm rubygems current
 gem install rails --no-ri --no-rdoc
 
 echo "Done provisioning. For your Rails app, browse using 127.0.0.1:3000"
