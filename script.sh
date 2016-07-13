@@ -9,7 +9,7 @@ apt-get update
 
 # To install important packages like gcc, g++, git and others:
 apt-get install -y build-essential git curl tree vim
-apt-get install -y bash-completion zlib1g-dev libssl-dev libreadline-dev bash-completion libyaml-dev libcurl4-gnutls-dev libsqlite3-dev apache2-threaded-dev
+apt-get install -y bash-completion zlib1g-dev libssl-dev libreadline-dev libyaml-dev libcurl4-gnutls-dev libsqlite3-dev apache2-threaded-dev
 
 # To allow adding to apt repo & install Python related packages
 apt-get install -y python-software-properties python-pip python-dev
